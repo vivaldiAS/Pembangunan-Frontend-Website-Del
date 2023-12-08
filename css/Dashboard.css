@@ -1,0 +1,285 @@
+::selection {
+    background-color: #451773; /* Ganti warna latar belakang sesuai keinginan */
+    color: white; /* Ganti warna teks yang dipilih */
+  }
+  
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(63, 63, 63, 0.5); /* Ubah nilai alpha untuk transparansi */
+  }
+  
+
+.isiSlide{
+    width: 90%;
+    text-align: justify;
+}
+
+.isiSlide h2 a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.6s ease; /* Menambahkan efek transisi warna selama 0.3 detik */
+
+}
+
+.isiSlide h2 a:hover{
+    color: rgb(180, 35, 180);
+    transition: color 0.7s ease; /* Efek transisi saat hover aktif */
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Tambahkan properti width: 100%; pada gambar slide */
+.mySlides img {
+    height: 80vh;
+    object-fit: cover;
+    width: 100%; /* Menyesuaikan lebar ke layar penuh */
+  }
+  
+  /* Mengatur slideshow container untuk posisi relatif dan lebar penuh */
+  .slideshow-container {
+    overflow: hidden;
+    height: 80vh;
+    position: relative;
+    width: 100%; /* Lebarkan container ke layar penuh */
+    max-width: 100%; /* Batasi lebar maksimum ke 1000px atau sesuai kebutuhan */
+    margin: auto;
+  }
+  
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.konten{
+    background-color: #F0F0F0;
+    padding: 1.5rem;
+    display: flex;
+}
+
+.kontenKiri{
+    width: 70%;
+    padding: 0.5rem 1.5rem;
+}
+.kontenKanan{
+    width: 30%;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.card1 {
+    border: 1px solid #DFDADA;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: white;
+    box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.3); /* x y blur spread warna */
+}
+.judulCard{
+    color: #451773;
+    font-weight: bolder;
+}
+.teks {
+    display: flex;
+    margin-top: 5px;
+}
+
+.cardKiri {
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardKiri .gambarCard {
+    width: 100%;
+    height: 90%;
+    display: block;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.caption {
+    bottom: 0;
+    color: #777777;
+    width: 100%;
+    padding: 3px;
+    font-size: small;
+    text-align: left;
+}
+
+.cardKanan {
+    width: 70%;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Style tambahan untuk mempercantik tampilan */
+.cardKanan .judulBerita {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #0477BF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.judulBerita:hover{
+    color: #451773;
+}
+
+.cardKanan p {
+    font-size: 12px;
+    text-align: justify;
+}
+.lihatLainnya {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+    font-size: 12px;
+    color: #0477BF;
+    text-decoration: none;
+}
+.lihatLainnya:hover{
+    color: #451773;
+}
+
+.cardTestimoni{
+    border: 1px solid #DFDADA;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.3); /* x y blur spread warna */
+    width: 85%;
+    position: relative;
+}
+
+.namaTestimonial{
+    color: #0477BF;
+    font-size: 14px;
+}
+.isiTestimonial{
+    margin-top: 0.6rem;
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+    display: flex;
+    border: 1px solid #DFDADA;
+    border-radius: 7px;
+    padding: 0.5rem;
+}
+.lihatTestimonial {
+    position: absolute;
+    bottom: 0.5;
+    right: 0;
+    font-size: 12px;
+    color: #0477BF;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.footer{
+    display: flex;
+    background-color: #0673B7;
+    color: white;
+    padding: 0.5rem;
+}
+
+.footerPart {
+    display: inline-block; /* Agar elemen .footerPart berada dalam satu baris */
+    vertical-align: top; /* Menjaga elemen di atas satu garis */
+    width: 33%;
+    padding: 1rem 2rem; /* Memberikan jarak antara elemen */
+    margin-right: 20px; /* Memberikan jarak antara elemen */
+    border-right: 1px solid white; /* Garis vertikal putih */
+}
+
+.footerPart:last-child {
+    border-right: none; /* Menghilangkan garis vertikal pada elemen terakhir */
+}
+
+.judulFooter{
+    font-size: 18px;
+    font-weight: bold;
+}
+.copyRight{
+    text-align: center;
+    padding: 1rem;
+    font-size: 14px;
+}
+.tombolCari{
+    background-color:#451773 ;
+    color: white;
+    border: none;
+}
+.tombolCari:hover{
+    background-color: rgb(42, 9, 78);
+    cursor: pointer;
+}
+.inputCari{
+    border-radius: 0; border: none;
+}
+.inputCari:focus{
+    outline: 1px solid black;
+    border-radius: 0;
+}

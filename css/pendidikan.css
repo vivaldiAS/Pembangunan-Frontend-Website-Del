@@ -1,0 +1,88 @@
+body {
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #666;
+}
+
+
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 300px;
+    }
+}
+
+
+.footer{
+    display: flex;
+    background-color: #0673B7;
+    color: white;
+    padding: 0.5rem;
+}
+
+.footerPart {
+    display: inline-block; /* Agar elemen .footerPart berada dalam satu baris */
+    vertical-align: top; /* Menjaga elemen di atas satu garis */
+    width: 33%;
+    padding: 1rem 2rem; /* Memberikan jarak antara elemen */
+    margin-right: 20px; /* Memberikan jarak antara elemen */
+    border-right: 1px solid white; /* Garis vertikal putih */
+}
+
+.footerPart:last-child {
+    border-right: none; /* Menghilangkan garis vertikal pada elemen terakhir */
+}
+
+.judulFooter{
+    font-size: 18px;
+    font-weight: bold;
+}
+.copyRight{
+    text-align: center;
+    padding: 1rem;
+    font-size: 14px;
+}
+.tombolCari{
+    background-color:#451773 ;
+    color: white;
+    border: none;
+}
+.tombolCari:hover{
+    background-color: rgb(42, 9, 78);
+    cursor: pointer;
+}
+.inputCari{
+    border-radius: 0; border: none;
+}
+.inputCari:focus{
+    outline: 1px solid black;
+    border-radius: 0;
+}
+
+.card-img {
+    width: auto;
+    height: auto;
+}
