@@ -3,8 +3,9 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 100vh;
 }
+
 
 .card {
     transition: transform 0.3s;
